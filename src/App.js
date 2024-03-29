@@ -92,7 +92,7 @@ function handleRemoveTodos() {
         <Row>
           <div className="wrapper-footer">
           <Col className="footer">
-            <div>&copy; {new Date().getFullYear()} Gootodo by <a href="https://github.com/dehyabi">dehyabi</a></div>
+            <div>&copy; {new Date().getFullYear()} Awesome Todo List by <a href="https://github.com/dehyabi">dehyabi</a></div>
           </Col>
           </div>
         </Row>
