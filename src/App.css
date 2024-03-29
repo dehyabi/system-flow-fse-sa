@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+.main-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    min-height: 568px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-content {
+    max-height: 90vh;
+    background: #f4f4f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-box {
+    background: #f3f3f3;
+    display: grid;
+    place-items: center;
+    height: 90vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box-content {
+    background: #fff;
+    padding: 15px;
+    width: 93vw;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 576px) {
+.box-content {
+    max-width: 100%;
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+    font-size: 1.5rem;
+    font-family: 'Righteous';
+    font-weight: 400;
+    color: #28c5f5;
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.mnxw-30 {
+    min-width: 30px;
+    max-width: 30px;
+}
+
+.main-todo {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main-todo::-webkit-scrollbar {
+    display: none;
+}
+
+.todo-wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@media (max-height: 568px) {
+.showTodos {
+    max-height: 20vh;
+    overflow-y: hidden;
+}
+}
+
+@media (min-height: 569px) {
+.showTodos {
+    max-height: 25vh;
+    overflow-y: hidden;
+}
+}
+
+@media (min-height: 768px) {
+.showTodos {
+    max-height: 35vh;
+    overflow-y: hidden;
+}
+}
+
+@media (min-height: 1024px) {
+.showTodos {
+    max-height: 45vh;
+    overflow-y: hidden;
+}
+}
+
+@media (min-height: 1200px) {
+.showTodos {
+    max-height: 50vh;
+    overflow-y: hidden;
+}
+}
+
+@media (min-height: 1400px) {
+.showTodos {
+    max-height: 55vh;
+    overflow-y: hidden;
+}
+}
+
+.showTodos:hover {
+    overflow-y: scroll;
+}
+
+@media (max-width: 1024px) {
+.showTodos {
+    overflow-y: auto;
+}
+
+.showTodos:hover {
+    overflow-y: auto;
+}
+}
+
+
+.checkbox {
+    padding-left: 0px;
+    padding-top: 2px;
+}
+
+.cust-checkbox {
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 4px;
+    border: 1px solid #29c5f5;
+    margin-top: 1.5px;
+    cursor: pointer;
+}
+
+input:checked {
+    content: url('./images/check.png');
+}
+
+.input-todo {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    border: 1px solid #29c5f5;
+    border-radius: 7px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+}
+
+.btn-add {
+    background-color: #29c5f5;
+    border: none;
+    border-radius: 7px;
+    color: white;
+}
+
+.btn-add:hover {
+    opacity: 0.75;
+}
+
+.wrapper-clear {
+    background: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.btn-clear {
+    background: transparent;
+    border: none;
+    color: rgb(255, 153, 0);
+}
+
+.btn-clear:hover {
+    opacity: 0.75;
+}
+
+.input-todo, .btn-add, .btn-clear {
+    height: 45px;
+}
+
+.footer {
+    max-height: 10vh;
+    background: #fff;
+}
+
+@media (max-height: 567px) {
+.main-content, .main-box {
+    min-height: 568px;
+}
+
+.footer {
+    min-height: 56.8px;
+}
+
+.main-container {
+    max-height: 568px;
+}
+}
+
+.footer {
+    opacity: 0.4;
+    display: grid;
+    height: 10vh;
+    place-items: center;
+    font-size: 0.9rem;
+}
+
+.wrapper-footer {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
